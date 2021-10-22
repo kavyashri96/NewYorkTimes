@@ -1,8 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_margin="20dp"
-        android:background="@android:color/black">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/grid_8">
+
+    <View
+            android:id="@+id/image"
+            android:layout_width="@dimen/grid_60"
+            android:layout_height="@dimen/grid_60"
+            android:layout_marginStart="@dimen/grid_8"
+            android:background="@drawable/bg_round"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/article_title"
+            style="@style/NewYorkTimes.TitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_12"
+            android:layout_marginTop="@dimen/grid_20"
+            android:layout_marginEnd="@dimen/grid_38"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@id/navigation_button"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="This is a sample title to the lenght of the view fr the eycbyewcgfwfyegrf" />
+
+    <TextView
+            android:id="@+id/article_author"
+            style="@style/NewYorkTimes.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/grid_12"
+            android:layout_marginEnd="@dimen/grid_38"
+            app:layout_constraintEnd_toEndOf="@id/navigation_button"
+            app:layout_constraintStart_toStartOf="@+id/article_title"
+            app:layout_constraintTop_toBottomOf="@+id/article_title"
+            tools:text="TextView to display the author name " />
+
+    <ImageView
+            android:id="@+id/navigation_button"
+            android:layout_width="@dimen/grid_20"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

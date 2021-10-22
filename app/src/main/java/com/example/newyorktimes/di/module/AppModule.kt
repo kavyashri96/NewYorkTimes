@@ -3,8 +3,8 @@ package com.example.newyorktimes.di.module
 import android.content.Context
 import com.example.newsdaily.BuildConfig
 import com.example.newsdaily.BuildConfig.BASE_URL
-import com.example.newyorktimes.data.network.ApiHelper
-import com.example.newyorktimes.data.network.ApiService
+import com.example.newyorktimes.data.network.api.ApiHelper
+import com.example.newyorktimes.data.network.api.ApiService
 import com.example.newyorktimes.utlis.NetworkHelper
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
