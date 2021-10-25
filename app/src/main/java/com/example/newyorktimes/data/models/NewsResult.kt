@@ -3,7 +3,7 @@ package com.example.newyorktimes.data.models
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class NewsResult (
+data class NewsResult (
     @SerializedName("status")
     @Expose
     var status: String? = null,

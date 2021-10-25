@@ -10,8 +10,7 @@ interface ApiService {
 
     @GET("mostpopular/v2/viewed/{period}.json")
     suspend fun getMostPopularNews(
-        @Path("period") period: String = "7",
-        @Query("api-key") api_key: String = API_KEY
+        @Path("period") period: String = "7"
     ): NewsResult
 
     companion object {
